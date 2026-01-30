@@ -43,25 +43,6 @@ core.register_node("new_flowers:dandelion_big_white", {
 		type = "fixed", fixed = { -0.15, -0.5, -0.15, 0.15, 0.25, 0.15 },
 	},
 	visual_scale = 0.8,
-	-- drop list
-	drop = {
-        max_items = 1,
-		items = {
-            {
-				tool_groups = "sharp",
-                items = {"new_flowers:dandelion_big_white"},
-            },
-			{
-				rarity = 10,
-                items = {"new_flowers:dandelion_big_white"},
-            },
-			{
-                items = {"new_flowers:dandelion_stem"},
-            },
-			
-
-		},
-	},
 })
 
 
