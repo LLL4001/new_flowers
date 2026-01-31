@@ -18,14 +18,14 @@ local S = core.get_translator("new_flowers")
 -- register nodes flowers section !!!
 
 
--- dandelion_big
+-- dandelion
 
-core.register_node("new_flowers:dandelion_big", {
+core.register_node("new_flowers:dandelion", {
 	description = S("Better yellow dandelion"),
 	drawtype = "plantlike",
-	tiles = { "dandelion_big.png" },
-	inventory_image = "dandelion_big.png",
-	wield_image = "dandelion_big.png",
+	tiles = { "new_flowers_dandelion.png" },
+	inventory_image = "new_flowers_dandelion.png",
+	wield_image = "new_flowers_dandelion.png",
 	sunlight_propagates = true,
 	paramtype = "light",
 	walkable = false,
@@ -38,14 +38,14 @@ core.register_node("new_flowers:dandelion_big", {
 })
 
 
--- dandelion_big_white
+-- dandelion_white
 
-core.register_node("new_flowers:dandelion_big_white", {
-	description = S("Better white dandelion"),
+core.register_node("new_flowers:dandelion_white", {
+	description = S("Blooming dandelion"),
 	drawtype = "plantlike",
-	tiles = { "dandelion_big_white.png" },
-	inventory_image = "dandelion_big_white.png",
-	wield_image = "dandelion_big_white.png",
+	tiles = { "dandelion_white.png" },
+	inventory_image = "dandelion_white.png",
+	wield_image = "dandelion_white.png",
 	sunlight_propagates = true,
 	paramtype = "light",
 	walkable = false,
@@ -61,11 +61,11 @@ core.register_node("new_flowers:dandelion_big_white", {
 		items = {
             {
 				tool_groups = "sharp",
-                items = {"new_flowers:dandelion_big_white"},
+                items = {"new_flowers:dandelion_white"},
             },
 			{
 				rarity = 10,
-                items = {"new_flowers:dandelion_big_white"},
+                items = {"new_flowers:dandelion_white"},
             },
 			{
                 items = {"new_flowers:dandelion_stem"},
@@ -120,7 +120,7 @@ core.register_node("new_flowers:dandelion_stem", {
 
 core.register_craft({
 	output = "dye:yellow 4",
-	recipe = { { "new_flowers:dandelion_big" } }
+	recipe = { { "new_flowers:dandelion" } }
 })
 
 
@@ -128,7 +128,7 @@ core.register_craft({
 
 core.register_craft({
 	output = "dye:white 4",
-	recipe = { { "new_flowers:dandelion_big_white" } }
+	recipe = { { "new_flowers:dandelion_white" } }
 })
 
 -- craft white dye from dandelion stem
@@ -148,14 +148,14 @@ core.register_craft({
 -- add to mapgen dandelion
 
 core.register_decoration({
-	name = "new_flowers:dandelion_big",
+	name = "new_flowers:dandelion",
 	deco_type = "simple",
 	place_on = "group:soil",
 	sidelen = 80,
 	fill_ratio = 0.5,
 	y_min = 1,
 	y_max = 200,
-	decoration = "new_flowers:dandelion_big",
+	decoration = "new_flowers:dandelion",
 	spawn_by = { "group:tree", "ethereal:bamboo" },
 	num_spawn_by = 1
 })
@@ -164,14 +164,14 @@ core.register_decoration({
 -- add to mapgen white dandelion
 
 core.register_decoration({
-	name = "new_flowers:dandelion_big_white",
+	name = "new_flowers:dandelion_white",
 	deco_type = "simple",
 	place_on = "group:soil",
 	sidelen = 80,
 	fill_ratio = 0.25,
 	y_min = 1,
 	y_max = 200,
-	decoration = "new_flowers:dandelion_big_white",
+	decoration = "new_flowers:dandelion_white",
 	spawn_by = { "group:tree", "ethereal:bamboo" },
 	num_spawn_by = 1
 })
