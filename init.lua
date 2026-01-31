@@ -6,6 +6,12 @@
 local S = core.get_translator("new_flowers")
 
 
+--
+--
+--
+-- register nodes section !!!
+
+
 -- dandelion_big
 
 core.register_node("new_flowers:dandelion_big", {
@@ -85,6 +91,25 @@ core.register_node("new_flowers:dandelion_stem", {
 })
 
 
+--
+--
+--
+-- register items section !!!
+
+
+--
+--
+--
+-- register tools section !!!
+
+
+--
+--
+--
+-- register crafts section !!!
+
+
+
 -- craft yellow dye from dandelion
 
 core.register_craft({
@@ -106,6 +131,12 @@ core.register_craft({
 	output = "dye:white 2",
 	recipe = { { "new_flowers:dandelion_stem" } }
 })
+
+
+--
+--
+--
+-- add to mapgen section !!!
 
 
 -- add to mapgen dandelion
