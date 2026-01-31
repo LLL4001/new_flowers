@@ -9,7 +9,7 @@ local S = core.get_translator("new_flowers")
 --
 --
 --
--- register nodes herbss section !!!
+-- register nodes herbs section !!!
 
 
 --
