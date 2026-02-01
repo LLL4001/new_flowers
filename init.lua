@@ -239,7 +239,7 @@ core.register_node("new_flowers:yarrow_young", {
 	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2 },
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
-		type = "fixed", fixed = { -0.15, -0.5, -0.15, 0.15, 0.2, 0.15 },
+		type = "fixed", fixed = { -0.28, -0.5, -0.28, 0.28, -0.05, 0.28 },
 	},
 	visual_scale = 0.8,
 })
@@ -259,7 +259,7 @@ core.register_node("new_flowers:yarrow_white", {
 	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2 },
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
-		type = "fixed", fixed = { -0.15, -0.5, -0.15, 0.15, 0.2, 0.15 },
+		type = "fixed", fixed = { -0.28, -0.5, -0.28, 0.28, 0.20, 0.28 },
 	},
 	visual_scale = 0.8,
 })
@@ -279,7 +279,7 @@ core.register_node("new_flowers:yarrow_yellow", {
 	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2 },
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
-		type = "fixed", fixed = { -0.15, -0.5, -0.15, 0.15, 0.2, 0.15 },
+		type = "fixed", fixed = { -0.28, -0.5, -0.28, 0.28, 0.20, 0.28 },
 	},
 	visual_scale = 0.8,
 })
@@ -299,7 +299,7 @@ core.register_node("new_flowers:yarrow_red", {
 	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2 },
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
-		type = "fixed", fixed = { -0.15, -0.5, -0.15, 0.15, 0.2, 0.15 },
+		type = "fixed", fixed = { -0.28, -0.5, -0.28, 0.28, 0.20, 0.28 },
 	},
 	visual_scale = 0.8,
 })
@@ -319,7 +319,7 @@ core.register_node("new_flowers:yarrow_pink", {
 	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2 },
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
-		type = "fixed", fixed = { -0.15, -0.5, -0.15, 0.15, 0.2, 0.15 },
+		type = "fixed", fixed = { -0.28, -0.5, -0.28, 0.28, 0.20, 0.28 },
 	},
 	visual_scale = 0.8,
 })
