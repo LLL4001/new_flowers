@@ -140,7 +140,7 @@ core.register_node("new_flowers:dandelion_young", {
 	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2 },
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
-		type = "fixed", fixed = { -0.15, -0.5, -0.15, 0.15, 0.2, 0.15 },
+		type = "fixed", fixed = { -0.20, -0.5, -0.22, 0.22, -0.15, 0.22 },
 	},
 	visual_scale = 0.8,
 })
@@ -160,7 +160,7 @@ core.register_node("new_flowers:dandelion", {
 	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2 },
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
-		type = "fixed", fixed = { -0.15, -0.5, -0.15, 0.15, 0.2, 0.15 },
+		type = "fixed", fixed = { -0.25, -0.5, -0.20, 0.20, 0.2, 0.20 },
 	},
 	visual_scale = 0.8,
 })
@@ -180,7 +180,7 @@ core.register_node("new_flowers:dandelion_white", {
 	groups = { snappy = 3, dig_immediate = 1, flammable = 2 },
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
-		type = "fixed", fixed = { -0.15, -0.5, -0.15, 0.15, 0.25, 0.15 },
+		type = "fixed", fixed = { -0.25, -0.5, -0.20, 0.20, 0.25, 0.20 },
 	},
 	visual_scale = 0.8,
 	-- drop list
@@ -219,7 +219,7 @@ core.register_node("new_flowers:dandelion_stem", {
 	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2 },
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
-		type = "fixed", fixed = { -0.15, -0.5, -0.15, 0.15, 0.1, 0.15 },
+		type = "fixed", fixed = { -0.25, -0.5, -0.20, 0.20, 0.15, 0.20 },
 	},
 	visual_scale = 0.8,
 })
