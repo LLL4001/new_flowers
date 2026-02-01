@@ -225,7 +225,7 @@ core.register_node("new_flowers:dandelion_stem", {
 })
 
 
--- paris young yarrow
+-- young yarrow
 
 core.register_node("new_flowers:yarrow_young", {
 	description = S("young yarrow"),
