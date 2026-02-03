@@ -27,7 +27,7 @@ core.register_node("new_flowers:paris_quadrifolia_young", {
 	sunlight_propagates = true,
 	paramtype = "light",
 	walkable = false,
-	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, flower = 1 },
+	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, herb = 1, poison = 1 },
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 		type = "fixed", fixed = { -0.10, -0.5, -0.15, 0.15, -0.15, 0.15 },
@@ -47,7 +47,7 @@ core.register_node("new_flowers:paris_quadrifolia", {
 	sunlight_propagates = true,
 	paramtype = "light",
 	walkable = false,
-	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, flower = 1 },
+	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, herb = 1, poison = 1 },
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 		type = "fixed", fixed = { -0.15, -0.5, -0.20, 0.20, 0.15, 0.20 },
@@ -67,7 +67,7 @@ core.register_node("new_flowers:paris_quadrifolia_berry", {
 	sunlight_propagates = true,
 	paramtype = "light",
 	walkable = false,
-	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, flower = 1 },
+	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, herb = 1, poison = 1 },
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 		type = "fixed", fixed = { -0.15, -0.5, -0.20, 0.20, 0.25, 0.20 },
@@ -91,7 +91,7 @@ core.register_node("new_flowers:plantain", {
 	sunlight_propagates = true,
 	paramtype = "light",
 	walkable = false,
-	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, flower = 1 },
+	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, herb = 1, heal = 1 },
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 		type = "fixed", fixed = { -0.18, -0.5, -0.18, 0.18, -0.15, 0.18 },
