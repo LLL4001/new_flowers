@@ -1,1 +1,3 @@
 abm get to know how computing intense it is
+
+core.get_item_group(itemname, groupname)
