@@ -3,3 +3,4 @@ abm get to know how computing intense it is
 core.get_item_group(itemname, groupname)
 digger:get_wielded_item()
 core.item_eat(hp_change, replace_with_item)
+on_use = core.item_eat( -9),
