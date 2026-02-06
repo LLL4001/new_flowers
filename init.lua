@@ -219,8 +219,7 @@ core.register_node("new_flowers:dandelion_white", {
             },
 			{
                 items = {"new_flowers:dandelion_stem"},
-            },
-			
+            },			
 
 		},
 	},
