@@ -27,12 +27,14 @@ core.register_node("new_flowers:paris_quadrifolia_young", {
 	sunlight_propagates = true,
 	paramtype = "light",
 	walkable = false,
-	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, herb = 1, poison = 1 },
+	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, herb = 1, poison = 1, attached_node = 1 },
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 		type = "fixed", fixed = { -0.10, -0.5, -0.15, 0.15, -0.15, 0.15 },
 	},
 	visual_scale = 0.8,
+	waving = 1,
+	buildable_to = true,
 })
 
 
@@ -47,12 +49,14 @@ core.register_node("new_flowers:paris_quadrifolia", {
 	sunlight_propagates = true,
 	paramtype = "light",
 	walkable = false,
-	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, herb = 1, poison = 1 },
+	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, herb = 1, poison = 1, attached_node = 1 },
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 		type = "fixed", fixed = { -0.15, -0.5, -0.20, 0.20, 0.15, 0.20 },
 	},
 	visual_scale = 0.8,
+	waving = 1,
+	buildable_to = true,
 })
 
 
@@ -67,12 +71,15 @@ core.register_node("new_flowers:paris_quadrifolia_berry", {
 	sunlight_propagates = true,
 	paramtype = "light",
 	walkable = false,
-	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, herb = 1, poison = 1 },
+	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = -5, herb = 1, poison = 1},
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 		type = "fixed", fixed = { -0.15, -0.5, -0.20, 0.20, 0.25, 0.20 },
 	},
 	visual_scale = 0.8,
+	buildable_to = true,
+	
+	on_use = core.item_eat( -10),
 })
 
 
@@ -91,12 +98,14 @@ core.register_node("new_flowers:plantain", {
 	sunlight_propagates = true,
 	paramtype = "light",
 	walkable = false,
-	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, herb = 1, heal = 1 },
+	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, herb = 1, heal = 1, attached_node = 1 },
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 		type = "fixed", fixed = { -0.18, -0.5, -0.18, 0.18, -0.15, 0.18 },
 	},
 	visual_scale = 0.8,
+	waving = 1,
+	buildable_to = true,
 })
 
 
@@ -117,12 +126,14 @@ core.register_node("new_flowers:daisies", {
 	sunlight_propagates = true,
 	paramtype = "light",
 	walkable = false,
-	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, flower = 1 },
+	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 1, flower = 1, attached_node = 1 },
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 		type = "fixed", fixed = { -0.25, -0.5, -0.25, 0.25, -0.2, 0.25 },
 	},
 	visual_scale = 0.8,
+	waving = 1,
+	buildable_to = true,
 })
 
 
@@ -137,12 +148,14 @@ core.register_node("new_flowers:dandelion_young", {
 	sunlight_propagates = true,
 	paramtype = "light",
 	walkable = false,
-	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, flower = 1 },
+	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 3, flower = 1, attached_node = 1 },
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 		type = "fixed", fixed = { -0.20, -0.5, -0.22, 0.22, -0.15, 0.22 },
 	},
 	visual_scale = 0.8,
+	waving = 1,
+	buildable_to = true,
 })
 
 
@@ -157,12 +170,14 @@ core.register_node("new_flowers:dandelion", {
 	sunlight_propagates = true,
 	paramtype = "light",
 	walkable = false,
-	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, flower = 1 },
+	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, flower = 1, attached_node = 1 },
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 		type = "fixed", fixed = { -0.25, -0.5, -0.20, 0.20, 0.2, 0.20 },
 	},
 	visual_scale = 0.8,
+	waving = 1,
+	buildable_to = true,
 })
 
 
@@ -177,12 +192,13 @@ core.register_node("new_flowers:dandelion_white", {
 	sunlight_propagates = true,
 	paramtype = "light",
 	walkable = false,
-	groups = { snappy = 3, dig_immediate = 1, flammable = 2, flower = 1 },
+	groups = { snappy = 3, dig_immediate = 1, flammable = 1, flower = 1, attached_node = 1 },
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 		type = "fixed", fixed = { -0.25, -0.5, -0.20, 0.20, 0.25, 0.20 },
 	},
 	visual_scale = 0.8,
+	waving = 1,
 	-- drop list
 	drop = {
         max_items = 1,
@@ -202,6 +218,7 @@ core.register_node("new_flowers:dandelion_white", {
 
 		},
 	},
+	buildable_to = true,
 })
 
 
@@ -216,12 +233,14 @@ core.register_node("new_flowers:dandelion_stem", {
 	sunlight_propagates = true,
 	paramtype = "light",
 	walkable = false,
-	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, flower = 1 },
+	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 1, flower = 1, attached_node = 1 },
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 		type = "fixed", fixed = { -0.25, -0.5, -0.20, 0.20, 0.15, 0.20 },
 	},
 	visual_scale = 0.8,
+	waving = 1,
+	buildable_to = true,
 })
 
 
@@ -236,12 +255,14 @@ core.register_node("new_flowers:yarrow_young", {
 	sunlight_propagates = true,
 	paramtype = "light",
 	walkable = false,
-	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, flower = 1 },
+	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, flower = 1, attached_node = 1 },
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 		type = "fixed", fixed = { -0.28, -0.5, -0.28, 0.28, -0.05, 0.28 },
 	},
 	visual_scale = 0.8,
+	waving = 1,
+	buildable_to = true,
 })
 
 
@@ -256,12 +277,14 @@ core.register_node("new_flowers:yarrow_white", {
 	sunlight_propagates = true,
 	paramtype = "light",
 	walkable = false,
-	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, flower = 1 },
+	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, flower = 1, attached_node = 1 },
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 		type = "fixed", fixed = { -0.28, -0.5, -0.28, 0.28, 0.20, 0.28 },
 	},
 	visual_scale = 0.8,
+	waving = 1,
+	buildable_to = true,
 })
 
 
@@ -276,12 +299,14 @@ core.register_node("new_flowers:yarrow_yellow", {
 	sunlight_propagates = true,
 	paramtype = "light",
 	walkable = false,
-	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, flower = 1 },
+	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, flower = 1, attached_node = 1 },
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 		type = "fixed", fixed = { -0.28, -0.5, -0.28, 0.28, 0.20, 0.28 },
 	},
 	visual_scale = 0.8,
+	waving = 1,
+	buildable_to = true,
 })
 
 
@@ -296,12 +321,14 @@ core.register_node("new_flowers:yarrow_red", {
 	sunlight_propagates = true,
 	paramtype = "light",
 	walkable = false,
-	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, flower = 1 },
+	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, flower = 1, attached_node = 1 },
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 		type = "fixed", fixed = { -0.28, -0.5, -0.28, 0.28, 0.20, 0.28 },
 	},
 	visual_scale = 0.8,
+	waving = 1,
+	buildable_to = true,
 })
 
 
@@ -316,12 +343,14 @@ core.register_node("new_flowers:yarrow_pink", {
 	sunlight_propagates = true,
 	paramtype = "light",
 	walkable = false,
-	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, flower = 1 },
+	groups = { snappy = 3, dig_immediate = 1, flammable = 2, eatable = 2, flower = 1, attached_node = 1 },
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 		type = "fixed", fixed = { -0.28, -0.5, -0.28, 0.28, 0.20, 0.28 },
 	},
 	visual_scale = 0.8,
+	waving = 1,
+	buildable_to = true,
 })
 
 --
