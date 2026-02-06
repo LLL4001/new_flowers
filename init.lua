@@ -351,7 +351,7 @@ core.register_tool("new_flowers:stone_knife", {
 		damage_groups = {fleshy=4},
 	},
 	sound = {breaks = "default_tool_breaks"},
-	groups = {knife = 1}
+	groups = {knife = 1, sharp = 1}
 })
 
 -- iron knife
@@ -370,7 +370,7 @@ core.register_tool("new_flowers:knife", {
 		damage_groups = {fleshy=6},
 	},
 	sound = {breaks = "default_tool_breaks"},
-	groups = {knife = 1}
+	groups = {knife = 1, sharp = 1}
 })
 
 --
