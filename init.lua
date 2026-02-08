@@ -77,6 +77,7 @@ core.register_node("new_flowers:paris_quadrifolia_berry", {
 		type = "fixed", fixed = { -0.15, -0.5, -0.20, 0.20, 0.25, 0.20 },
 	},
 	visual_scale = 0.8,
+	waving = 1,
 	buildable_to = true,
 })
 
