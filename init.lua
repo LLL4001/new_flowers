@@ -366,7 +366,41 @@ core.register_node("new_flowers:yarrow_pink", {
 -- register items section !!!!
 
 
+core.register_craftitem("new_flowers:bowl", {
+	description = S("Empty bowl"),
+	inventory_image = "new_flowers_bowl.png",
+	groups = { empty_bowl = 1 },
+})
 
+core.register_craftitem("new_flowers:bowl_with_water", {
+	description = S("Bowl with water"),
+	inventory_image = "new_flowers_bowl_with_water.png",
+	groups = { bowl_with_water = 1, water = 1 },
+})
+
+core.register_craftitem("new_flowers:bowl_heal_simple", {
+	description = S("Bowl with simple healling ointment"),
+	inventory_image = "new_flowers_bowl_heal_simple.png",
+	groups = { heal_ointment = 1 },
+})
+
+core.register_craftitem("new_flowers:bowl_heal_strong", {
+	description = S("Bowl with strong healling ointment"),
+	inventory_image = "new_flowers_bowl_heal_strong.png",
+	groups = { heal_ointment = 1 },
+})
+
+core.register_craftitem("new_flowers:bowl_poison_simple", {
+	description = S("Bowl with simple poison ointment"),
+	inventory_image = "new_flowers_bowl_poison_mild.png",
+	groups = { poison_ointment = 1 },
+})
+
+core.register_craftitem("new_flowers:bowl_poison_strong", {
+	description = S("Bowl with strong poison ointment"),
+	inventory_image = "new_flowers_bowl_poison_strong.png",
+	groups = { poison_ointment = 1 },
+})
 
 --
 --
@@ -433,6 +467,56 @@ core.register_craft({
 		{ "group:stick", "" },
 	}
 })
+
+-- carft empty bowls
+core.register_craft({
+	output = "new_flowers:bowl 4",
+	recipe = {
+		{ "group:wood", "", "group:wood" },
+		{ "", "group:wood", "" },
+	}
+})
+
+--
+-- craft ointment section !!!
+
+-- craft bowl with healling ointment
+core.register_craft({
+	output = "new_flowers:bowl_heal_simple",
+	recipe = {
+		{ "new_flowers:plantain", "new_flowers:dandelion_young" },
+		{ "new_flowers:bowl_with_water", "" },
+	}
+})
+
+-- craft bowl with strong healling ointment
+core.register_craft({
+	output = "new_flowers:bowl_heal_strong",
+	recipe = {
+		{ "new_flowers:plantain", "new_flowers:daisies", "new_flowers:dandelion_young" },
+		{ "new_flowers:bowl_with_water", "", "" },
+	}
+})
+
+-- craft bowl with simple poison ointment
+core.register_craft({
+	output = "new_flowers:bowl_poison_simple",
+	recipe = {
+		{ "new_flowers:paris_quadrifolia_berry" },
+		{ "new_flowers:bowl_with_water" },
+	}
+})
+
+-- craft bowl with strong poison ointment
+core.register_craft({
+	output = "new_flowers:bowl_poison_strong",
+	recipe = {
+		{ "new_flowers:paris_quadrifolia_berry", "new_flowers:paris_quadrifolia_berry" },
+		{ "new_flowers:bowl_with_water", "" },
+	}
+})
+
+-- heal and poisonous crafts section !!!
 
 --
 -- dye crafts section !!!
