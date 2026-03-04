@@ -1,23 +1,13 @@
---[[
-]] --
-
--- translation
 
 local S = core.get_translator("new_flowers")
 
+--
+-- register nodes herbs section 
 
 --
---
---
--- register nodes herbs section !!!!
-
-
---
---poison !!!
-
+--poison 
 
 -- young paris quadrifolia
-
 core.register_node("new_flowers:paris_quadrifolia_young", {
 	description = S("young paris quadrifolia"),
 	drawtype = "plantlike",
@@ -37,9 +27,7 @@ core.register_node("new_flowers:paris_quadrifolia_young", {
 	buildable_to = true,
 })
 
-
 -- paris quadrifolia
-
 core.register_node("new_flowers:paris_quadrifolia", {
 	description = S("paris quadrifolia"),
 	drawtype = "plantlike",
@@ -59,9 +47,7 @@ core.register_node("new_flowers:paris_quadrifolia", {
 	buildable_to = true,
 })
 
-
 -- paris quadrifolia with berry
-
 core.register_node("new_flowers:paris_quadrifolia_berry", {
 	description = S("paris quadrifolia with berry"),
 	drawtype = "plantlike",
@@ -81,13 +67,10 @@ core.register_node("new_flowers:paris_quadrifolia_berry", {
 	buildable_to = true,
 })
 
-
 --
---heal !!!
-
+--heal 
 
 -- plantain
-
 core.register_node("new_flowers:plantain", {
 	description = S("plantain"),
 	drawtype = "plantlike",
@@ -109,15 +92,10 @@ core.register_node("new_flowers:plantain", {
 	on_use = core.item_eat( 2),
 })
 
-
 --
---
---
--- register nodes flowers section !!!!
-
+-- register nodes flowers section 
 
 -- daisies
-
 core.register_node("new_flowers:daisies", {
 	description = S("daisies"),
 	drawtype = "plantlike",
@@ -139,9 +117,7 @@ core.register_node("new_flowers:daisies", {
 	on_use = core.item_eat( 1),
 })
 
-
 -- young dandelion
-
 core.register_node("new_flowers:dandelion_young", {
 	description = S("young dandelion"),
 	drawtype = "plantlike",
@@ -163,9 +139,7 @@ core.register_node("new_flowers:dandelion_young", {
 	on_use = core.item_eat( 3),
 })
 
-
 --yellow dandelion
-
 core.register_node("new_flowers:dandelion", {
 	description = S("Better yellow dandelion"),
 	drawtype = "plantlike",
@@ -187,9 +161,7 @@ core.register_node("new_flowers:dandelion", {
 	on_use = core.item_eat( 2),
 })
 
-
 -- blooming dandelion
-
 core.register_node("new_flowers:dandelion_white", {
 	description = S("Blooming dandelion"),
 	drawtype = "plantlike",
@@ -228,9 +200,7 @@ core.register_node("new_flowers:dandelion_white", {
 	buildable_to = true,
 })
 
-
 -- dandelion stem
-
 core.register_node("new_flowers:dandelion_stem", {
 	description = S("Dandelion Stem"),
 	drawtype = "plantlike",
@@ -250,9 +220,7 @@ core.register_node("new_flowers:dandelion_stem", {
 	buildable_to = true,
 })
 
-
 -- young yarrow
-
 core.register_node("new_flowers:yarrow_young", {
 	description = S("young yarrow"),
 	drawtype = "plantlike",
@@ -272,9 +240,7 @@ core.register_node("new_flowers:yarrow_young", {
 	buildable_to = true,
 })
 
-
 -- paris white yarrow
-
 core.register_node("new_flowers:yarrow_white", {
 	description = S("white yarrow"),
 	drawtype = "plantlike",
@@ -294,9 +260,7 @@ core.register_node("new_flowers:yarrow_white", {
 	buildable_to = true,
 })
 
-
 -- paris yellow yarrow
-
 core.register_node("new_flowers:yarrow_yellow", {
 	description = S("yellow yarrow"),
 	drawtype = "plantlike",
@@ -316,9 +280,7 @@ core.register_node("new_flowers:yarrow_yellow", {
 	buildable_to = true,
 })
 
-
 -- paris red yarrow
-
 core.register_node("new_flowers:yarrow_red", {
 	description = S("red yarrow"),
 	drawtype = "plantlike",
@@ -338,9 +300,7 @@ core.register_node("new_flowers:yarrow_red", {
 	buildable_to = true,
 })
 
-
 -- paris pink yarrow
-
 core.register_node("new_flowers:yarrow_pink", {
 	description = S("pink yarrow"),
 	drawtype = "plantlike",
@@ -361,54 +321,9 @@ core.register_node("new_flowers:yarrow_pink", {
 })
 
 --
---
---
--- register items section !!!!
-
-
-core.register_craftitem("new_flowers:bowl", {
-	description = S("Empty bowl"),
-	inventory_image = "new_flowers_bowl.png",
-	groups = { empty_bowl = 1 },
-})
-
-core.register_craftitem("new_flowers:bowl_with_water", {
-	description = S("Bowl with water"),
-	inventory_image = "new_flowers_bowl_with_water.png",
-	groups = { bowl_with_water = 1, water = 1 },
-})
-
-core.register_craftitem("new_flowers:bowl_heal_simple", {
-	description = S("Bowl with simple healling ointment"),
-	inventory_image = "new_flowers_bowl_heal_simple.png",
-	groups = { heal_ointment = 1 },
-})
-
-core.register_craftitem("new_flowers:bowl_heal_strong", {
-	description = S("Bowl with strong healling ointment"),
-	inventory_image = "new_flowers_bowl_heal_strong.png",
-	groups = { heal_ointment = 1 },
-})
-
-core.register_craftitem("new_flowers:bowl_poison_simple", {
-	description = S("Bowl with simple poison ointment"),
-	inventory_image = "new_flowers_bowl_poison_mild.png",
-	groups = { poison_ointment = 1 },
-})
-
-core.register_craftitem("new_flowers:bowl_poison_strong", {
-	description = S("Bowl with strong poison ointment"),
-	inventory_image = "new_flowers_bowl_poison_strong.png",
-	groups = { poison_ointment = 1 },
-})
-
---
---
---
--- register tools section !!!!
+-- register tools section 
 
 -- stone knife
-
 core.register_tool("new_flowers:stone_knife", {
 	description = S("Stone Knife"),
 	inventory_image = "new_flowers_stone_knife.png",
@@ -427,7 +342,6 @@ core.register_tool("new_flowers:stone_knife", {
 })
 
 -- iron knife
-
 core.register_tool("new_flowers:knife", {
 	description = S("Iron Knife"),
 	inventory_image = "new_flowers_knife.png",
@@ -446,9 +360,7 @@ core.register_tool("new_flowers:knife", {
 })
 
 --
---
---
--- register crafts section !!!!
+-- register crafts section 
 
 -- craft stone knife
 core.register_craft({
@@ -468,152 +380,87 @@ core.register_craft({
 	}
 })
 
--- carft empty bowls
-core.register_craft({
-	output = "new_flowers:bowl 4",
-	recipe = {
-		{ "group:wood", "", "group:wood" },
-		{ "", "group:wood", "" },
-	}
-})
-
 --
--- craft ointment section !!!
-
--- craft bowl with healling ointment
-core.register_craft({
-	output = "new_flowers:bowl_heal_simple",
-	recipe = {
-		{ "new_flowers:plantain", "new_flowers:dandelion_young" },
-		{ "new_flowers:bowl_with_water", "" },
-	}
-})
-
--- craft bowl with strong healling ointment
-core.register_craft({
-	output = "new_flowers:bowl_heal_strong",
-	recipe = {
-		{ "new_flowers:plantain", "new_flowers:daisies", "new_flowers:dandelion_young" },
-		{ "new_flowers:bowl_with_water", "", "" },
-	}
-})
-
--- craft bowl with simple poison ointment
-core.register_craft({
-	output = "new_flowers:bowl_poison_simple",
-	recipe = {
-		{ "new_flowers:paris_quadrifolia_berry" },
-		{ "new_flowers:bowl_with_water" },
-	}
-})
-
--- craft bowl with strong poison ointment
-core.register_craft({
-	output = "new_flowers:bowl_poison_strong",
-	recipe = {
-		{ "new_flowers:paris_quadrifolia_berry", "new_flowers:paris_quadrifolia_berry" },
-		{ "new_flowers:bowl_with_water", "" },
-	}
-})
-
--- heal and poisonous crafts section !!!
-
---
--- dye crafts section !!!
+-- dye crafts section 
 
 -- craft green dye from plantain
-
 core.register_craft({
 	output = "dye:green 4",
 	recipe = { { "new_flowers:plantain" } }
 })
 
 -- carft blue dye from paris quadrifolia with berry
-
 core.register_craft({
 	output = "dye:blue 4",
 	recipe = { { "new_flowers:paris_quadrifolia_berry" } }
 })
 
 -- craft white dye from daisies
-
 core.register_craft({
 	output = "dye:white 4",
 	recipe = { { "new_flowers:daisies" } }
 })
 
 --
--- yarrows crafts !!!
+-- yarrows crafts 
 
 -- craft white dye from yarrow white
-
 core.register_craft({
 	output = "dye:white 4",
 	recipe = { { "new_flowers:yarrow_white" } }
 })
 
 -- craft yellow dye from yarrow yellow
-
 core.register_craft({
 	output = "dye:yellow 4",
 	recipe = { { "new_flowers:yarrow_yellow" } }
 })
 
 -- craft red dye from yarrow red
-
 core.register_craft({
 	output = "dye:red 4",
 	recipe = { { "new_flowers:yarrow_red" } }
 })
 
 -- craft pink dye from yarrow pink
-
 core.register_craft({
 	output = "dye:pink 4",
 	recipe = { { "new_flowers:yarrow_pink" } }
 })
 
 --
--- dandelions crafts !!!
+-- dandelions crafts 
 
 -- craft yellow dye from dandelion
-
 core.register_craft({
 	output = "dye:yellow 4",
 	recipe = { { "new_flowers:dandelion" } }
 })
 
 -- craft white dye from white dandelion
-
 core.register_craft({
 	output = "dye:white 4",
 	recipe = { { "new_flowers:dandelion_white" } }
 })
 
 -- craft white dye from dandelion stem
-
 core.register_craft({
 	output = "dye:white 2",
 	recipe = { { "new_flowers:dandelion_stem" } }
 })
 
 -- craft white dye from young dandelion
-
 core.register_craft({
 	output = "dye:white 2",
 	recipe = { { "new_flowers:dandelion_young" } }
 })
 
 --
---
---
--- add to mapgen section !!!!
+-- add to mapgen section 
 
-
--- add to mapgen dandelion
-
+-- add to mapgen flowers
 core.register_decoration({
-	name = "new_flowers:dandelion",
+	name = "new_flowers:flowers",
 	deco_type = "simple",
 	place_on = "group:soil",
 	sidelen = 80,
@@ -623,15 +470,13 @@ core.register_decoration({
 	decoration = { "new_flowers:dandelion_white", "new_flowers:dandelion", "new_flowers:dandelion_young", "new_flowers:yarrow_young", "new_flowers:yarrow_white", "new_flowers:yarrow_yellow", "new_flowers:yarrow_red", "new_flowers:yarrow_pink", "new_flowers:plantain", "new_flowers:daisies"},
 })
 
-
--- add to mapgen white dandelion
-
+-- add to mapgen paris
 core.register_decoration({
-	name = "new_flowers:dandelion_white",
+	name = "new_flowers:paris",
 	deco_type = "simple",
 	place_on = "group:soil",
 	sidelen = 80,
-	fill_ratio = 0.10,
+	fill_ratio = 0.001,
 	y_min = 1,
 	y_max = 200,
 	decoration = { "new_flowers:paris_quadrifolia_young", "new_flowers:paris_quadrifolia", "new_flowers:paris_quadrifolia_berry" },
