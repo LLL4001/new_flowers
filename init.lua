@@ -464,7 +464,7 @@ core.register_decoration({
 	deco_type = "simple",
 	place_on = "group:soil",
 	sidelen = 80,
-	fill_ratio = 0.50,
+	fill_ratio = 0.01,
 	y_min = 1,
 	y_max = 200,
 	decoration = { "new_flowers:dandelion_white", "new_flowers:dandelion", "new_flowers:dandelion_young", "new_flowers:yarrow_young", "new_flowers:yarrow_white", "new_flowers:yarrow_yellow", "new_flowers:yarrow_red", "new_flowers:yarrow_pink", "new_flowers:plantain", "new_flowers:daisies"},
