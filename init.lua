@@ -325,7 +325,7 @@ core.register_node("new_flowers:yarrow_pink", {
 
 -- stone knife
 core.register_tool("new_flowers:stone_knife", {
-	description = S("Stone Knife"),
+	description = S("Stone Knife, perfect for cutting flowers and leaves."),
 	inventory_image = "new_flowers_stone_knife.png",
 	stack_max = 1,
 	range = 2.0,
@@ -343,7 +343,7 @@ core.register_tool("new_flowers:stone_knife", {
 
 -- iron knife
 core.register_tool("new_flowers:knife", {
-	description = S("Iron Knife"),
+	description = S("Iron Knife, perfect for cutting flowers and leaves."),
 	inventory_image = "new_flowers_knife.png",
 	stack_max = 1,
 	range = 2.0,
@@ -460,14 +460,25 @@ core.register_craft({
 
 -- add to mapgen flowers
 core.register_decoration({
-	name = "new_flowers:flowers",
+	name = "new_flowers:flowers_adult",
 	deco_type = "simple",
 	place_on = "group:soil",
 	sidelen = 80,
 	fill_ratio = 0.01,
 	y_min = 1,
 	y_max = 200,
-	decoration = { "new_flowers:dandelion_white", "new_flowers:dandelion", "new_flowers:dandelion_young", "new_flowers:yarrow_young", "new_flowers:yarrow_white", "new_flowers:yarrow_yellow", "new_flowers:yarrow_red", "new_flowers:yarrow_pink", "new_flowers:plantain", "new_flowers:daisies"},
+	decoration = { "new_flowers:dandelion_white", "new_flowers:dandelion", "new_flowers:yarrow_white", "new_flowers:yarrow_yellow", "new_flowers:yarrow_red", "new_flowers:yarrow_pink", "new_flowers:plantain", "new_flowers:daisies"},
+})
+
+core.register_decoration({
+	name = "new_flowers:flowers_young",
+	deco_type = "simple",
+	place_on = "group:soil",
+	sidelen = 80,
+	fill_ratio = 0.0003,
+	y_min = 1,
+	y_max = 200,
+	decoration = { "new_flowers:dandelion_young", "new_flowers:yarrow_young"},
 })
 
 -- add to mapgen paris
